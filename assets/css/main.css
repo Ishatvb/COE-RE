@@ -2623,6 +2623,40 @@ input, select, textarea {
 					display: none;
 				}
 
+/*Moving Text*/
+
+.scroll-left {
+	height: 50px;	
+	overflow: hidden;
+	position: relative;
+	background: #37c0fb;
+	color: black;
+	border: 1px solid #37c0fb;
+   }
+   .scroll-left p {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	line-height: 50px;
+	text-align: center;
+	/* Starting position */
+	transform:translateX(100%);
+	/* Apply animation to this element */
+	animation: scroll-left 15s linear infinite;
+   }
+   /* Move it (define the animation) */
+   @keyframes scroll-left {
+	0%   {
+	transform: translateX(100%); 		
+	}
+	100% {
+	transform: translateX(-100%); 
+	}
+   }
+
+
+
 /* Dropotron */
 
 	.dropotron {
@@ -2691,10 +2725,10 @@ input, select, textarea {
 
 
 	#banner {
-		background-image: url("../../images/p3.jpeg");
+		/* background-image: url("../../images/p3.jpeg"); */
 		background-position: center center;
 		background-size: cover;
-		height: 28em;
+		/* height: 28em; */
 		text-align: center;
 		position: relative;
 	}
