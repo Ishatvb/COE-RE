@@ -2685,6 +2685,8 @@ input, select, textarea {
 		  .dropdown:hover .dropdown-content {
 			display: block;
 		  }
+
+
 /* Banner */
 
 
@@ -2731,6 +2733,82 @@ input, select, textarea {
 				vertical-align: middle;
 				margin-left: 1em;
 			}
+
+
+/* announcement */
+
+.announcement{
+	margin: 10px 50px 10px 50px;
+	display: flex;
+}
+
+.announcement .msgContainer{
+	height: 400px;
+	overflow-y: scroll;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+	width: 90%;
+}
+
+.announcement .msgContainer::-webkit-scrollbar{
+	display: none;
+}
+
+.announcement .msgContainer2{
+	height: 400px;
+	overflow-y: scroll;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+	width: 90%;
+}
+
+.announcement .msgContainer2::-webkit-scrollbar{
+	display: none;
+}
+
+.announcement .new{
+	box-shadow: 2px 0px #c3c4c5;
+	margin-right: 10px;
+}
+
+.announcement .press{
+	box-shadow: inset 2px 0px #c3c4c5;
+	padding-left: 10px;
+}
+
+.announcement p{
+	border-bottom: 1px solid rgb(117, 116, 116);
+}
+
+.heading1{
+	display: flex;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+#btn1{
+	margin-right: 10px;
+	padding: 5px;
+}
+
+#btn2{
+	padding: 5px;
+	background-color: white;
+	color: black;
+}
+
+.announcement .msgContainer2{
+	display: none;
+}
+
+@media(max-width:930px){
+	.announcement{
+		flex-direction: column;
+		justify-content: center;
+    	align-items: center;
+}
+	}
+
 
 /* Wrapper */
 
