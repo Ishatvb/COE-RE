@@ -2626,35 +2626,21 @@ input, select, textarea {
 
 /*Moving Text*/
 
-.scroll-left {
-	height: 0.8em;	
-	overflow: hidden;
-	position: relative;
-	background: #37c0fb;
-	color: black;
-	border: 1px solid #37c0fb;
-   }
-   .scroll-left p {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	line-height: 50px;
-	text-align: center;
-	/* Starting position */
-	transform:translateX(100%);
-	/* Apply animation to this element */
-	animation: scroll-left 15s linear infinite;
-   }
-   /* Move it (define the animation) */
-   @keyframes scroll-left {
-	0%   {
-	transform: translateX(100%); 		
+@keyframes moveLeftToRight {
+	0% {
+		transform: translateX(-100%);
 	}
 	100% {
-	transform: translateX(-100%); 
+		transform: translateX(100%);
 	}
-   }
+}
+
+.moving-text {
+	font-size: 24px;
+	white-space: nowrap; /* Prevent text from wrapping */
+	overflow: hidden; /* Hide overflowing text */
+	animation: moveLeftToRight 5s linear infinite; /* Adjust the duration as needed */
+}
 
 
 
@@ -2697,12 +2683,10 @@ input, select, textarea {
 		margin-top: -1px;
 	}
 
-
 	.dropdown {
 		position: relative;
 		display: inline-block;
-	  }
-	  
+	}
 	  .dropdown-content {
 		display: none;
 		position: absolute;
@@ -2713,7 +2697,6 @@ input, select, textarea {
 		z-index: 1;
 		width: 250px;
 	  }
-	  
 	  .dropdown-content a{
 		padding: 5px;
 	  }
@@ -2767,14 +2750,73 @@ input, select, textarea {
 				margin-left: 1em;
 			}
 			
+/* New styles for the vision and mission section */
+#vision-mission {
+	background-color: #336699;
+	color: #fff;
+	padding: 80px 0 40px;
+	text-align: center;
+  }
 
+  .vm-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	max-width: 1200px;
+	margin: 0 auto;
+  }
+
+  .vm-card {
+	flex: 1;
+	max-width: 400px;
+	margin: 20px;
+	padding: 30px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease-in-out,
+	  background-color 0.3s ease-in-out;
+  }
+
+  .vm-card:hover {
+	transform: scale(1.05);
+	background-color: #e6f7ff; /* Light blue on hover */
+  }
+
+  .vm-title {
+	font-size: 28px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	color: #336699; /* Dark blue for titles */
+  }
+
+  .vm-description {
+	font-size: 18px;
+	color: #333;
+  }
+
+  /* Add animations or transitions as needed */
+  @keyframes fadeIn {
+	from {
+	  opacity: 0;
+	}
+	to {
+	  opacity: 1;
+	}
+  }
+
+  .fade-in {
+	animation: fadeIn 1s ease-in-out;
+  }
 
 /* announcement */
 
 	.announcement{
 		margin: 10px 50px 10px 50px;
+		padding-bottom: 40px;
 		display: flex;
-		padding: 0 20px;
+		padding: 50px 20px;
 	}
 
 	.announcement .msgContainer{
@@ -2875,7 +2917,9 @@ input, select, textarea {
 
 		.wrapper.style1 {
 			background: #fff;
+
 		}
+
 
 		.wrapper.style2 {
 			background-color: #fff;
