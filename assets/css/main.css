@@ -2766,12 +2766,15 @@ input, select, textarea {
 				vertical-align: middle;
 				margin-left: 1em;
 			}
+			
+
 
 /* announcement */
 
 	.announcement{
 		margin: 10px 50px 10px 50px;
 		display: flex;
+		padding: 0 20px;
 	}
 
 	.announcement .msgContainer{
@@ -2831,6 +2834,29 @@ input, select, textarea {
 
 	.announcement .msgContainer2{
 		display: none;
+	}
+
+	.card {
+		background-color: #fff;
+		border: 1px solid #ccc;
+		border-radius: 8px;
+		padding: 15px;
+		margin-bottom: 10px;
+		transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+	}
+
+	.card:hover {
+		transform: scale(1.05);
+		box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+	}
+
+	@keyframes scrollAnimation {
+		0% {
+			transform: translateY(0);
+		}
+		100% {
+			transform: translateY(calc(-100% + 400px)); /* Adjust the card height */
+		}
 	}
 
 	@media(max-width:930px){

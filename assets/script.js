@@ -31,3 +31,18 @@ btn1.addEventListener("click",()=>{
         msg = true;
     }
 })
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Add smooth scrolling to all links with the # symbol
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+});
+
