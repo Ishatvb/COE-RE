@@ -2626,22 +2626,22 @@ input, select, textarea {
 
 /*Moving Text*/
 
-@keyframes moveLeftToRight {
+/* @keyframes moveLeftToRight {
 	0% {
 		transform: translateX(-100%);
 	}
 	100% {
 		transform: translateX(100%);
 	}
-}
+} 
 
 .moving-text {
 	font-size: 24px;
-	white-space: nowrap; /* Prevent text from wrapping */
-	overflow: hidden; /* Hide overflowing text */
-	animation: moveLeftToRight 5s linear infinite; /* Adjust the duration as needed */
+	white-space: nowrap; 
+	overflow: hidden; 
+	animation: moveLeftToRight 5s linear infinite; 
 }
-
+*/
 
 
 /* Dropotron */
@@ -3552,3 +3552,5 @@ input, select, textarea {
 			}
 
 	}
+
+	

@@ -32,7 +32,6 @@ btn1.addEventListener("click",()=>{
     }
 })
 
-
 document.addEventListener("DOMContentLoaded", function() {
     // Add smooth scrolling to all links with the # symbol
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {

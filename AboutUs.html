@@ -35,6 +35,9 @@
         object-fit: cover;
         filter: brightness(0.6);
       }
+      #header {
+      padding: 0.5em 0 0 0;
+      }
       #header h1 {
         font-size: 1.3em;
         display: block;
@@ -61,7 +64,7 @@
       .a {
         background-color: green;
         overflow: hidden; /* Hide the overflow of the image */
-		height: 100%;
+		  height: 100%;
 		
       }
 
@@ -98,7 +101,7 @@
 
       .vm-card {
         flex: 1;
-        max-width: 400px;
+        max-width: 900px;
         margin: 20px;
         padding: 30px;
         background-color: #fff;
@@ -138,29 +141,62 @@
       .fade-in {
         animation: fadeIn 1s ease-in-out;
       }
+      .header1{
+        height: 20vh;
+        width: 100vw;
+        
+        display: flex;
+        text-align: center;
+    }
+    .logo{
+        width: 10vw;
+        height: 20vh;
+        
+    }
+    .logo img{
+        width: 10vw;
+        height: 20vh;
+    }
+    .center{
+        width: 80vw;
+        padding-top: 7vh;
+        font-size: 2rem;
+        
+    }
+    .last{
+        width: 10vw;
+        padding-top: 7vh;
+        font-size: 2rem;
+        padding-right: 10px;
+        
+    }
+    /* Remove blue color on carousel controls hover */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: transparent;
+}
+
     </style>
   </head>
   <body class="is-preload">
     <div id="page-wrapper">
       <!-- Header -->
       <div id="header">
-        <!-- Logo -->
-        <!-- <div id="logo">
-          <div class="a">
-            <img id="logoJuet" src="images/juetlogo.jpg" alt="juet" />
+        <!-- <div class="header1">
+          <div class="logo">
+               <img src="images/juetlogo.jpg" alt="juet">
           </div>
-          <div class="b"> -->
-            <!-- <h1>
-              <a href="AboutUs.html"
-                >Center of excellence<em> for Renewable Energy</em></a>
-            </h1> -->
-          <!-- </div>
-          <div class="c">
-            <h1>
-              <a href="index.html">COE-<em>RE</em></a>
-            </h1>
+          <div class="center">
+              <h1>
+                    Center of excellence<em> for Renewable Energy</em></a>
+              </h1>
           </div>
-        </div> -->
+          <div class="last">
+              <h1>
+                  COE-<em>RE</em></a>
+              </h1>
+          </div>
+      </div> -->
         <!-- Nav -->
           <nav id="nav">
             <ul>
@@ -224,8 +260,8 @@
               alt="Slide 1"
             />
             <div class="carousel-caption top-0 mt-4">
-              <p class="mt-5 fs-3 text-uppercase">TAG LINE 1</p>
-              <h1 class="display-1 fw-bolder text-capitalize">
+              <p class="mt-5 fs-3 text-uppercase"></p>
+              <h1 class="display-1 fw-bolder" style="padding: 0.7em">
                 Centre of Excellence for Renewable Energy
               </h1>
             </div>
@@ -237,8 +273,8 @@
               alt="Slide 2"
             />
             <div class="carousel-caption top-0 mt-4">
-              <p class="text-uppercase fs-3 mt-5">TAG LINE 2</p>
-              <p class="display-1 fw-bolder text-capitalize">
+              <p class="text-uppercase fs-3 mt-5"></p>
+              <p class="display-1 fw-bolder" style="padding: 0.7em">
                 Centre of Excellence for Renewable Energy
               </p>
             </div>
@@ -250,8 +286,8 @@
               alt="Slide 3"
             />
             <div class="carousel-caption top-0 mt-4">
-              <p class="text-uppercase fs-3 mt-5">TAG LINE 3</p>
-              <p class="display-1 fw-bolder text-capitalize">
+              <p class="text-uppercase fs-3 mt-5"></p>
+              <p class="display-1 fw-bolder" style="padding: 0.7em">
                 Centre of Excellence for Renewable Energy
               </p>
             </div>
@@ -280,14 +316,15 @@
       <!-- Banner -->
 
       <section id="banner">
-        <header>
+        <header style="padding: 2rem;">
           <h2 class="moving-text">
-            COE-RE: <em>Here we can give title <a href="#">HTML CSS</a></em>
+            <marquee direction="left">COE-RE: <em>Upcoming Event: International Conference of Renewable Energy 2024<a href="#"></a></em></marquee>
           </h2>
-          <a href="#" class="button">Learn More</a>
+          <!-- <a href="#" class="button">Learn More</a> -->
         </header>
-
       </section>
+
+      
 
       <!-- Vision and Mission Section -->
       <section id="vision-mission" class="fade-in">
@@ -295,19 +332,23 @@
           <div class="vm-card">
             <div class="vm-title">Our Vision</div>
             <div class="vm-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </div>
-          </div>
-
-          <div class="vm-card">
-            <div class="vm-title">Our Mission</div>
-            <div class="vm-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              To achieve excellence as a hub for exploring, educating, and advocating renewable energy, with the goal of providing the university community with the necessary knowledge to excel in research, education, and community engagement within the transformative realm of renewable energy and tools to play a leading role in shaping sustainable solutions.
             </div>
           </div>
         </div>
+
+        <div class="vm-container"> 
+          <div class="vm-card">
+            <div class="vm-title">Our Mission</div>
+              <div class="vm-description">
+              <ol>
+                <li>Pioneering global research, confronting energy challenges for sustainable solutions</li>
+                <li>Cultivate deep understanding and equip students for renewable energy.</li>
+                <li>Advocating policies, forging alliances, and engaging communities in sustainable energy missions.</li>
+              </ol>
+              </div>
+            </div>
+          </div>
       </section>
 
       <section class="announcement">
