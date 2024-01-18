@@ -2521,9 +2521,15 @@ input, select, textarea {
 
 /* Header */
 
+.logo{
+	width: 8%;
+	height: 8%;
+	
+}
+
 	#header {
 		text-align: center;
-		padding: 2.5em 0 0 0;
+		padding: 0 0 0 0;
 		background-color: #fff;
 		background-image: url("images/bg02.png"), url("images/bg02.png"), url("images/bg01.png");
 		background-position: top left,					top left,					top left;
@@ -2707,30 +2713,31 @@ input, select, textarea {
 
 /* Banner */
 
+
 	#banner {
 		/* background-image: url("../../images/p3.jpeg"); */
-		background-position: center center;
-		background-size: cover;
+		/* background-position: center center; */
+		/* background-size: cover; */
 		/* height: 28em; */
 		text-align: center;
 		position: relative;
 	}
 
 		#banner header {
-			position: arelative;
+			position: relative;
 			bottom: 0;
 			left: 0;
 			width: 100%;
-			background: #212121;
+			
 			background: rgba(27, 27, 27, 0.75);
 			color: #fff;
 			padding: 1.5em 0;
+			
 		}
 
 			#banner header h2 {
-				display: inline-block;
 				margin: 0;
-				font-size: 1.25em;
+				font-size: 1.5em;
 				vertical-align: middle;
 			}
 
