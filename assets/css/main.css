@@ -2772,6 +2772,19 @@ input, select, textarea {
 				margin-left: 1em;
 			}
 			
+			#banner #points{
+				width: 60%;
+				margin: 0 auto 0 auto;
+				
+			}
+			
+			#banner li{
+				text-align: justify;
+			}
+			#banner h5{
+				text-align: right;
+			}
+			
 /* New styles for the vision and mission section */
 #vision-mission {
 	background-color: #336699;
@@ -2974,6 +2987,9 @@ input, select, textarea {
 	#cta {
 		text-align: center;
 		padding: 3.5em 0;
+		bottom: 0;
+		width: 100%;
+		
 	}
 
 		#cta header h2 {
@@ -4057,6 +4073,7 @@ nav ul {
 
 nav ul li{
 	margin-right: 20px;
+	
 }
 
 nav ul li a{
